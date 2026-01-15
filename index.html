@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HMC Newsletter</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="scroll-progress"></div>
+
+<!-- NAVBAR -->
+<header class="navbar reveal">
+  <div class="logo">
+    <img src="images/logo.jpeg" alt="Society Logo">
+    <span>HMC Newsletter</span>
+  </div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#reports">Reports</a>
+    <a href="#archive">Archive</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<!-- HOME / INTRO -->
+<section id="home" class="hero reveal">
+  <h1>Walk to Live</h1>
+  <p class="tagline">
+    Official Newsletter & Documentation of HMC
+  </p>
+</section>
+
+<section class="section intro reveal">
+  <h2 class="who-title reveal">Who We Are</h2>
+
+
+  <p>
+    The HMC Newsletter is responsible for compiling, designing
+    and publishing comprehensive six-month reports that documents
+    the progress of our community.
+  </p>
+
+  <div class="intro-cards">
+    <div class="card reveal">
+      <h3>Bi-Annual Reports</h3>
+      <p>Professionally curated six-month reports.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Archival Record</h3>
+      <p>Preserving institutional history.</p>
+    </div>
+    <div class="card reveal">
+      <h3> Community Focus</h3>
+      <p>Transparency, accuracy and accountability.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REPORT SECTION -->
+<section id="reports" class="section alt reveal">
+  <h2>Latest Report</h2>
+
+  <div class="pdf-viewer reveal">
+    <object 
+      data="reports/report-jan-jun-2025.pdf"
+      type="application/pdf"
+      width="100%"
+      height="500">
+      <p>
+        Your browser does not support embedded PDFs.
+        <a href="reports/report-jan-jun-2025.pdf" download>
+          Download the PDF instead.
+        </a>
+      </p>
+    </object>
+    <a 
+  href="reports/report-jan-jun-2025.pdf" 
+  class="download-btn" 
+  target="_blank"
+  download
+>
+  ⬇ Download Full Report (PDF)
+</a>
+
+  </div>
+</section>
+
+<!-- ARCHIVE -->
+<section id="archive" class="section reveal">
+  <h2>Archived Reports</h2>
+
+  <div class="empty-state reveal">
+    <p>No archived reports available at this time.</p>
+    <span>Previous reports will appear here once the next cycle is published.</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section alt reveal">
+  <h2>About the Society</h2>
+
+  <p class="about-text reveal">
+    The <strong>Hiking & Mountaineering Club (HMC)</strong> 
+  </p>
+
+  <p>
+    HMC holds a prestigious position among
+    university-level societies due to its unique nature of activities and active participation
+    in outdoor adventures.
+    Established in <strong>1901</strong>, the club initially worked under the Sports Board and
+    remained affiliated with the Rovers Club. Over time, HMC has evolved into a separate and
+    independent university-level society, proudly carrying its own identity.
+  </p>
+
+  <p>
+    Since the inception of mankind, humans have engraved their fate on the stones of hardship
+    and despair. This perpetual endeavor reflects an innate curiosity to explore the unknown.
+    HMC exists to guide and train students to meet adventures and challenges in nature with
+    courage, resilience and leadership.
+  </p>
+  <div class="leaders">
+    <div class="leader reveal">
+      <img src="images/advisor.jpg" alt="Advisor">
+      <h4>Advisor</h4>
+      <p>Syed Yasir Usman</p>
+    </div>
+
+    <div class="leader reveal">
+      <img src="images/president.jpeg" alt="President">
+      <h4>President</h4>
+      <p>Sobaan Aziz Usmani</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="reveal">
+  <p>© 2026 HMC Newsletter</p>
+</footer>
+
+<!-- SCROLL REVEAL SCRIPT -->
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+
+  function revealOnScroll() {
+    reveals.forEach(el => {
+      const windowHeight = window.innerHeight;
+      const elementTop = el.getBoundingClientRect().top;
+
+      if (elementTop < windowHeight - 100) {
+        el.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
