@@ -60,34 +60,31 @@
 <!-- REPORT SECTION -->
 <section id="reports" class="section alt reveal">
   <h2>Latest Report</h2>
-  
-  <div class="pdf-test" style="text-align: center; padding: 40px; background: #f8f9fa; border-radius: 10px;">
-    <h3>Testing PDF Access</h3>
-    
-    <!-- Test 1: Direct link -->
-    <p>
-      <a href="reports/report-jan-jun-2025.pdf" target="_blank" style="color: blue;">
-        Test 1: Direct PDF Link
-      </a>
-    </p>
-    
-    <!-- Test 2: Raw GitHub link -->
-    <p>
-      <a href="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO-NAME/main/reports/report-jan-jun-2025.pdf" 
-         target="_blank" style="color: blue;">
-        Test 2: GitHub Raw Link
-      </a>
-    </p>
-    
-    <!-- Test 3: Download only -->
-    <p>
-      <a href="reports/report-jan-jun-2025.pdf" download style="color: green; font-weight: bold;">
-        Test 3: Force Download
-      </a>
-    </p>
+
+  <div class="pdf-viewer reveal">
+    <object 
+      data="reports/report-jan-jun-2025.pdf"
+      type="application/pdf"
+      width="100%"
+      height="500">
+      <p>
+        Your browser does not support embedded PDFs.
+        <a href="reports/report-jan-jun-2025.pdf" download>
+          Download the PDF instead.
+        </a>
+      </p>
+    </object>
+    <a 
+  href="reports/report-jan-jun-2025(1).pdf" 
+  class="download-btn" 
+  target="_blank"
+  download
+>
+  ⬇ Download Full Report (PDF)
+</a>
+
   </div>
 </section>
-
 
 <!-- ARCHIVE -->
 <section id="archive" class="section reveal">
@@ -163,7 +160,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
