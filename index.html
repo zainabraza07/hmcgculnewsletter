@@ -60,40 +60,31 @@
 <!-- REPORT SECTION -->
 <section id="reports" class="section alt reveal">
   <h2>Latest Report</h2>
-
-  <div class="pdf-viewer reveal">
-    <!-- Replace USERNAME and REPO with your actual GitHub username and repository name -->
-    <iframe 
-      src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO-NAME/main/reports/report-jan-jun-2025.pdf#view=FitH"
-      width="100%" 
-      height="600px"
-      style="border: none; border-radius: 8px;"
-      title="HMC Report January-June 2025"
-    >
-      <p style="padding: 20px; text-align: center;">
-        Your browser doesn't support embedded PDFs. 
-        <br>
-        <a href="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO-NAME/main/reports/report-jan-jun-2025.pdf" 
-           style="color: #2c5282; text-decoration: underline;">
-          Click here to download the PDF
-        </a>
-      </p>
-    </iframe>
-
-    <div style="margin-top: 20px; text-align: center;">
-      <a 
-        href="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO-NAME/main/reports/report-jan-jun-2025.pdf" 
-        class="download-btn" 
-        target="_blank"
-        download="HMC_Report_Jan_Jun_2025.pdf"
-      >
-        ⬇ Download Full Report (PDF)
+  
+  <div class="pdf-test" style="text-align: center; padding: 40px; background: #f8f9fa; border-radius: 10px;">
+    <h3>Testing PDF Access</h3>
+    
+    <!-- Test 1: Direct link -->
+    <p>
+      <a href="reports/report-jan-jun-2025.pdf" target="_blank" style="color: blue;">
+        Test 1: Direct PDF Link
       </a>
-      
-      <p style="margin-top: 10px; font-size: 0.9em; color: #666;">
-        File size: 8.82 MB | Last updated: January 16, 2026
-      </p>
-    </div>
+    </p>
+    
+    <!-- Test 2: Raw GitHub link -->
+    <p>
+      <a href="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO-NAME/main/reports/report-jan-jun-2025.pdf" 
+         target="_blank" style="color: blue;">
+        Test 2: GitHub Raw Link
+      </a>
+    </p>
+    
+    <!-- Test 3: Download only -->
+    <p>
+      <a href="reports/report-jan-jun-2025.pdf" download style="color: green; font-weight: bold;">
+        Test 3: Force Download
+      </a>
+    </p>
   </div>
 </section>
 
@@ -172,6 +163,7 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
